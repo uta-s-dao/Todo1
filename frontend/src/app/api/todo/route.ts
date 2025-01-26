@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
 import * as mysql from "promise-mysql";
+import dotenv from "dotenv";
 
 // 環境変数
-require("dotenv").config({ path: "../.env" });
+dotenv.config({ path: "./project-root/.env" });
 
 // 書籍一覧取得API
 export async function GET() {
